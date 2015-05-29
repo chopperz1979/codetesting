@@ -14,12 +14,6 @@ try :
 
     get_devices_json = response.json()
 
-    #print (json.dumps(get_devices_json, indent=4, sort_keys=False))
-
-    if get_devices_json['response'] : 
-        #print get_devices_json['response']
-        print (json.dumps(get_devices_json, indent=4, sort_keys=False))
-    #else:
-        #print (json.dumps(get_devices_json, indent=4, sort_keys=False))
+    print (json.dumps(get_devices_json, indent=4, sort_keys=False))
 except:
     print 'Error in getting the request from the APIC-EM'
